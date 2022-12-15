@@ -13,6 +13,10 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.send("success")
+})
+
 
 app.post("/data", async function (req, res) {
   console.log(req.body)
